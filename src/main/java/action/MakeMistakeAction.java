@@ -1,7 +1,9 @@
-import com.github.javafaker.Faker;
+package action;
+
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
-import com.sun.xml.internal.ws.server.provider.SyncProviderInvokerTube;
+import action.MyFakeValuesService.*;
+
 
 import java.util.Locale;
 import java.util.Random;

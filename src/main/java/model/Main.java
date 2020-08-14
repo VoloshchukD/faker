@@ -1,3 +1,7 @@
+package model;
+
+import action.GenerateUserAction;
+
 public class Main {
     public static void main(String[] args){
         GenerateUserAction generateUserAction = new GenerateUserAction();

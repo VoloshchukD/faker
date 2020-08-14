@@ -1,4 +1,6 @@
+import action.GenerateUserAction;
 import junit.framework.TestCase;
+import model.Main;
 
 public class GenerateUserActionTest extends TestCase {
     private GenerateUserAction generateUserAction = new GenerateUserAction();

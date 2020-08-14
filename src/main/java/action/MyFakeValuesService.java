@@ -1,3 +1,5 @@
+package action;
+
 import com.github.javafaker.service.FakeValuesService;
 import com.github.javafaker.service.RandomService;
 

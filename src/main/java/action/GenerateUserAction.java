@@ -1,4 +1,7 @@
+package action;
 import com.github.javafaker.Faker;
+import model.UserData;
+import exception.InvalidInputException;
 
 import java.util.Locale;
 
@@ -7,7 +10,7 @@ public class GenerateUserAction {
     private int userDataNumber;
     private int errorNumber;
     private float errorNumberFloat = 0;
-    protected static Faker faker;
+    public static Faker faker;
      StringBuilder s1 = new StringBuilder();
 
 
@@ -41,10 +44,9 @@ public class GenerateUserAction {
 
         if(this.errorNumber == 0){
             for (int i = 0; i < this.userDataNumber; i++) {
-                System.out.println(new UserData());
+                new UserData();
             }
-
-
+            System.out.println(new UserData());
         return;
         }
 

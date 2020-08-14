@@ -1,17 +1,21 @@
+package model;
+import action.GenerateUserAction;
+import static action.GenerateUserAction.faker;
+
 public class UserData {
     private String name;
     private String adress;
     private String number;
 
     public UserData() {
-        this.name = GenerateUserAction.faker.name().fullName();
-        this.adress = GenerateUserAction.faker.address().zipCode() + " "
-                + GenerateUserAction.faker.address().country() + " "
-                + GenerateUserAction.faker.address().cityName()
-                + GenerateUserAction.faker.address().streetSuffix()
-                + GenerateUserAction.faker.address().streetName()
-                + GenerateUserAction.faker.address().buildingNumber()
-                + GenerateUserAction.faker.address().secondaryAddress();
+        this.name = faker.name().fullName();
+        this.adress = faker.address().zipCode() + " "
+                + faker.address().country() + " "
+                + faker.address().cityName()
+                + faker.address().streetSuffix()
+                + faker.address().streetName()
+                + faker.address().buildingNumber()
+                + faker.address().secondaryAddress();
         this.number = GenerateUserAction.faker.phoneNumber().phoneNumber();
     }
 
